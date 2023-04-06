@@ -19,6 +19,7 @@
     "styled-reset": "^4.4.5"
   },
   "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.37.0",
     "eslint-config-airbnb": "^19.0.4",
