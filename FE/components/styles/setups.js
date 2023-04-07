@@ -12,8 +12,9 @@ export const colors = {
 
   red_main: "#F04438",
 
-  orange_main: "#FF5C01",
+  orange_main: "#FC9700",
   orange_sub: "#FFB356",
+  orange_disabled: "#FFEAD8",
 
   yellow_main: "#F8D706",
 

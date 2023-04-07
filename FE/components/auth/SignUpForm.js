@@ -1,6 +1,5 @@
 import useInput from "../../utils/hooks/useInput";
 import { useEffect, useState } from "react";
-import Input from "../Input";
 import IEmail from "../../assets/icons/email.svg";
 import IUser from "../../assets/icons/user.svg";
 import ILock from "../../assets/icons/lock_closed.svg";
@@ -12,7 +11,10 @@ import {
 } from "../../utils/validators";
 import IOpen from "../../assets/icons/eye_opened.svg";
 import IClose from "../../assets/icons/eye_closed.svg";
+import Input from "../Input";
+import Button from "../Button";
 import styled from "styled-components";
+import { colors } from "../styles/setups";
 
 // CHECK React-hook-form 처리방식 보고 모방하기
 // TODO 서버 사이드 에러 체크 기능 추가 (이미 가입된 이메일 처리) - 실시간으로 처리할지? 클릭시 처리할지 의사결정
@@ -75,15 +77,12 @@ const SignUpForm = () => {
     );
   };
 
-  // TODO 버튼 disable 처리 + form 막아 보안 높이기
+  const getDisabled =
+    emailErr || usernameErr || passwordErr || passwordConfirmErr ? true : false;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, username, password);
-    if (emailErr || usernameErr || passwordErr || passwordConfirmErr) {
-      console.log("제출 불가헌 상태");
-      return;
-    }
-    console.log("제출 완료");
+    console.log(`[@handleSubmit] ${(email, username, password)}`);
   };
 
   return (
@@ -131,7 +130,12 @@ const SignUpForm = () => {
         error={passwordConfirmErr}
         message={passwordConfirmMsg}
       />
-      <button type="submit">제출</button>
+      <Button
+        type="submit"
+        text="회원가입"
+        onClick={handleSubmit}
+        disabled={getDisabled}
+      />
     </form>
   );
 };

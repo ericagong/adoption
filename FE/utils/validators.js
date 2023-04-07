@@ -35,6 +35,5 @@ export function isValidPassword(password) {
  * @returns boolean
  */
 export function isValidPasswordConfirm(password, passwordCheck) {
-  console.log(password, passwordCheck);
   return password === passwordCheck;
 }
