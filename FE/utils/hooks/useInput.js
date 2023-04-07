@@ -14,8 +14,8 @@ const noValidation = () => {
 const useInput = (
   initialValue = null,
   validator = noValidation,
-  validateMsg,
-  errorMsg
+  validateMsg = "",
+  errorMsg = ""
 ) => {
   const [value, setValue] = useState(initialValue);
   const [error, setError] = useState(false);
