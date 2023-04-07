@@ -19,7 +19,6 @@ body {
 }
 
 body * {  
-	background: inherit;
 	font-family: 'SF Pro Display';
 	font-style: normal;
 	font-weight: ${fontWeights.basic};

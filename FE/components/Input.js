@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import {
   colors,
@@ -19,8 +18,6 @@ const Input = ({
   error,
   message,
 }) => {
-  console.log(error, message);
-
   return (
     <Root>
       <InputBox>
@@ -40,7 +37,6 @@ const Input = ({
 
 const Root = styled.div`
   display: flex;
-
   flex-direction: column;
   gap: 0.5rem;
   border: none;
@@ -60,6 +56,7 @@ const Section = styled.div`
 const LeftSection = styled(Section)`
   top: 1.3rem;
   left: 1.5rem;
+  background-color: none;
 `;
 
 const TextBox = styled.input`
