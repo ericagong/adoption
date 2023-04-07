@@ -48,7 +48,7 @@ const Root = styled.button`
   color: ${colors.white_main};
 
   &:hover {
-    cursor: "pointer";
+    cursor: pointer;
   }
 
   ${(props) =>
@@ -56,7 +56,7 @@ const Root = styled.button`
     css`
       background-color: ${colors.orange_disabled};
       &:hover {
-        cursor: "default";
+        cursor: default;
       }
     `}
 `;
