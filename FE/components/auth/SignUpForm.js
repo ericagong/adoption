@@ -14,7 +14,6 @@ import IClose from "../../assets/icons/eye_closed.svg";
 import Input from "../Input";
 import Button from "../Button";
 import styled from "styled-components";
-import { colors } from "../styles/setups";
 
 // CHECK React-hook-form 처리방식 보고 모방하기
 // TODO 서버 사이드 에러 체크 기능 추가 (이미 가입된 이메일 처리) - 실시간으로 처리할지? 클릭시 처리할지 의사결정

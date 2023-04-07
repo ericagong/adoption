@@ -25,6 +25,7 @@ body * {
 	font-size: ${fontSize.basic};
 	line-height: ${lineHeights.basic};
 	color: ${colors.gray_main};
+	text-decoration: none;
 }
 `;
 

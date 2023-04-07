@@ -1,7 +1,7 @@
 import Root from "../components/Layout";
 import Layout from "../components/Card";
 import ILogo from "../assets/illustrations/logo.svg";
-import InnerLink from "../components/InnerLink";
+import Link from "../components/Link";
 import SignUpForm from "../components/auth/SignUpForm";
 
 const SignUp = () => {
@@ -9,7 +9,7 @@ const SignUp = () => {
     <Root>
       <Layout>
         <ILogo />
-        <InnerLink href={"/signIn"} text="로그인으로" />
+        <Link href={"/signIn"} text="로그인으로" />
         <SignUpForm />
       </Layout>
     </Root>
